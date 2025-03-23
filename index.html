@@ -118,6 +118,9 @@
                 })
                 .then(response => {
                     if (response.ok) {
+                        // Redirect to faellook.com after successful submission
+                        setTimeout(() => { window.location.href = 'http://www.faellook.com/'; }, 1000);
+                    } else {
                         alert('Error sending data.');
                     }
                 })
